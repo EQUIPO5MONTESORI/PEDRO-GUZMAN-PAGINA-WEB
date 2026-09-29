@@ -1,6 +1,43 @@
-body{
-  padding: 25px;
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+*{
+  	margin: 0;
+  	padding: 0; 
+	box-sizing: border-box; 
+	font-family: "Oleo Script Swash Caps", system-ui;
+    }
+
+body {
+display: grid;
+grid-template-rows: auto 1fr auto;
+min-height: 100vh;
+min-height: 100dvh;
 }
-.title {
-	color: #5C6AC4;
+.header {
+background-color: pink;
+display: flex; /Display define como se muestra un elemento, al ponerlo en flex estamos diciendo que hay que distribuir los elementos de forma que se "estiren" (flex) de la forma más organizada según el tamaño de la pantalla donde se vea. /
+align-items: center;
+justify-content: space-between;
+padding: 1rem 2rem;
+}
+.header-title{
+font-size: 1.5rem;
+}
+.languages {
+display: flex;
+gap: .5rem;
+}
+.lang-button {
+background-color: transparent;
+font-size: 1.25rem;
+border: 0;
+cursor: pointer;
+}
+.section {
+padding-inline: 2rem;
+margin-top: 2rem;
+}
+.footer {
+background-color: pink;
+padding: 1rem 2rem;
+margin-top: 2rem;
 }
